@@ -7,7 +7,7 @@
             <Label Text="{Binding Test}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="afficher"  VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Yellow"/>
+            <Button Text="afficher" Command="{Binding commandTest}"  VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Yellow"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

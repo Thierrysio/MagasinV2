@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace MagasinV2.VueModele
 {
@@ -21,6 +21,9 @@ namespace MagasinV2.VueModele
         #endregion
 
         #region Getters/Setters
+
+        public ICommand commandTest => new Command(ActioncommandTest);
+
         public string Test {
 
             get
@@ -37,6 +40,11 @@ namespace MagasinV2.VueModele
 
         #region Methodes
 
+        public void ActioncommandTest()
+        {
+            string resultat = Test;
+            Test = "Au revoir";
+        }
         #endregion
     }
 }
