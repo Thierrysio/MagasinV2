@@ -4,9 +4,10 @@
              x:Class="MagasinV2.Vue.PlanningVue">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="{Binding Test}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="afficher"  VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Yellow"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

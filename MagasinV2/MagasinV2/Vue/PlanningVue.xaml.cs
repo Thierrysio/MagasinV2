@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MagasinV2.VueModele;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,14 @@ namespace MagasinV2.Vue
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlanningVue : ContentPage
     {
+        PlanningVueModele vueModele;
         public PlanningVue()
         {
+
             InitializeComponent();
+            BindingContext = vueModele = new PlanningVueModele();
+
+
         }
     }
 }
